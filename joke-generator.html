@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-app">
+            <div class="header">
+                <h1>😂 Random Joke Generator</h1>
+                <p>Get a laugh with random jokes!</p>
+            </div>
+
+            <div class="joke-display">
+                <div id="jokeContent" class="joke-content">
+                    <p id="jokeText" class="joke-text">Click "Get Joke" to load a random joke!</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="getJokeBtn" class="btn btn-primary">Get Joke</button>
+                <button id="shareBtn" class="btn btn-secondary">Share</button>
+                <button id="copyBtn" class="btn btn-secondary">Copy</button>
+            </div>
+
+            <div class="joke-type-selector">
+                <label for="jokeType">Joke Type:</label>
+                <select id="jokeType">
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock-Knock</option>
+                </select>
+            </div>
+
+            <div class="favorites">
+                <h2>⭐ Favorites</h2>
+                <ul id="favoritesList" class="favorites-list">
+                    <!-- Favorites will be added here -->
+                </ul>
+                <button id="clearFavBtn" class="btn btn-secondary">Clear Favorites</button>
+            </div>
+
+            <div id="loadingSpinner" class="spinner hidden"></div>
+            <div id="notification" class="notification"></div>
+        </div>
+    </div>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
